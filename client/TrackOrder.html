@@ -4,48 +4,100 @@
     <meta charset="utf-8">
     <title>Track Order</title>
     <style>
-      form {
-        width: 50%;
-        margin: 0 auto;
-      }
+        body {
+              
+      background-image: url(https://img.freepik.com/premium-vector/gps-gps-technology-abstract-background_99087-4.jpg?w=2000);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .button {
+            background-color: #4493EC;
+            color: white;
+            padding: 20px 40px;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+          }
+    .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 200px 100;
+          }
+          h1 {
+            
+            text-align: center;
+            font-family: Helvetica;
+            color:white; 
+            font-size: 4em;
+            margin-top: 50px;
+          }
+          form {
+            width: 50%;
+            margin: 0 auto;
+          }
+    
+          label {
+            font-weight: bold;
+            font-family: arial;
+            color:white;
+            margin-right: 10px;
+          }
+    
+          input[type="number"] {
+            width:100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+          }
+    
+          input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+    
+          input[type="submit"]:hover {
+            background-color: #45a049;
+          }
 
-      label {
-        font-weight: bold;
-        margin-right: 10px;
-      }
-
-      input[type="text"] {
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-      }
-
-      input[type="submit"] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-    </style>
+          .status{
+            color: white;
+        }
+        </style>
   </head>
   <body>
     <h1>Track Order</h1>
     <form id="form6" onsubmit="printValues(event)">
       <label>Order ID:</label>
-      <input type="text" id="Product_ID" required /><br />
+      <input type="number" id="Product_ID" required /><br />
 
       <input type="submit" value="Track">
+
+      <p id="statusid"></p>
+      <p id="statuslocation"></p>
+      <p id="statusshopname"></p>
+      <p id="statusbuyername"></p>
+      <p id="statustimearrived"></p>
     </form>
+    <div class="container">
+        <button class="button" onclick="window.location.href = 'index.html';">Home</button>
+        <button class="button" onclick="window.location.href = 'OrderProduct.html';">Order Product</button>
+        <button class="button" onclick="window.location.href = 'PaymentByBuyer.html';">Payment</button>
+        <button class="button" onclick="window.location.href = 'Seller.html';">Seller</button>
+        <button class="button" onclick="window.location.href = 'Courier.html';">Courier</button>
+        <button class="button" onclick="window.location.href = 'Receiver.html';">Receiver</button>
+        <button class="button" onclick="window.location.href = 'TrackProduct.html';">Track Product</button>
+      </div>
     <script type="module" src="./js/TrackOrder.js"></script>
   </body>
 </html>

@@ -31,8 +31,14 @@ const orderProduct = async (Name, Capacity, Color,  Quantity,  PriceOfProduct) =
         }
         if(result){
             console.log("succeed")
+            //alert("Transaction Successful")
+            const status = document.getElementById("status");
+            status.innerHTML = "Transaction Successful";
         }else{
             console.log("failed")
+            //alert("Transaction Failed")
+            const status = document.getElementById("status");
+            status.innerHTML = "Transaction Failed";
         }
     });
 }
@@ -57,12 +63,3 @@ const printValues = (e) => {
   }
   
   document.getElementById("form1").addEventListener("submit", printValues);
-
-  
-// const main = async () => {
-//   const accounts = await web3.eth.requestAccounts();
-//   account = accounts[0];
-//   await refr17eshTickets();
-// };
-
-// main();

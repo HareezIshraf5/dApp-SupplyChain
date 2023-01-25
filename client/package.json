@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startindex": "parcel index.html",
+    "startOP":"parcel OrderProduct.html",
+    "startPay":"parcel PaymentByBuyer.html",
+    "startSeller":"parcel Seller.html",
+    "startCourier":"parcel Courier.html",
+    "startReceiver":"parcel Receiver.html",
+    "startTO":"parcel TrackOrder.html",
+    "startTP":"parcel TrackProduct.html"
   },
   "keywords": [],
   "author": "",

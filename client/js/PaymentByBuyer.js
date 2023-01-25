@@ -30,9 +30,15 @@ const paymentByBuyer = async (productID, priceToPay) => {
             console.error(error)
         }
         if(result){
-            console.log("succeed")
-        }else{
-            console.log("failed")
+          console.log("succeed")
+          //alert("Transaction Successful")
+          const status = document.getElementById("status");
+          status.innerHTML = "Transaction Successful";
+      }else{
+          console.log("failed")
+          //alert("Transaction Failed")
+          const status = document.getElementById("status");
+          status.innerHTML = "Transaction Failed";
         }
     });
 }

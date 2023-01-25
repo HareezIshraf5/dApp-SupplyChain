@@ -30,9 +30,15 @@ const courier = async (productId, location, timearrived) => {
             console.error(error)
         }
         if(result){
-            console.log("succeed")
-        }else{
-            console.log("failed")
+          console.log("succeed")
+          //alert("Transaction Successful")
+          const status = document.getElementById("status");
+          status.innerHTML = "Transaction Successful";
+      }else{
+          console.log("failed")
+          //alert("Transaction Failed")
+          const status = document.getElementById("status");
+          status.innerHTML = "Transaction Failed";
         }
     });
 }
@@ -42,7 +48,6 @@ const printValues = (e) => {
     const product_id = document.getElementById("Product_ID").value;
     const location = document.getElementById("Location").value;
     const time_arrived = document.getElementById("Time_Arrived").value;
-
 
     console.log("Product ID: ", product_id);
     console.log("Location: ", location);

@@ -2,10 +2,23 @@
 <html>
   <head>
     <title>Supply Chain dApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+    body {
+          
+  background-image: url(https://time.com/nextadvisor/wp-content/uploads/2021/05/na-what-is-blockchain.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.mySlides {display:none;}
       h1 {
         text-align: center;
-        font-size: 3em;
+        font-family: Helvetica;
+        color:white; 
+        font-size: 4em;
         margin-top: 50px;
       }
       .container {
@@ -15,9 +28,9 @@
         margin: 50px 0;
       }
       .button {
-        background-color: #4CAF50;
+        background-color: #4493EC;
         color: white;
-        padding: 16px 32px;
+        padding: 20px 40px;
         margin: 10px;
         border: none;
         cursor: pointer;
@@ -28,11 +41,36 @@
   <body>
     <h1>Welcome to dApp website for Supply Chain</h1>
     <div class="container">
-      <button class="button" onclick="window.location.href = 'OrderProduct.html';">Order Product</button>
-      <button class="button" onclick="window.location.href = 'PaymentByBuyer.html';">Payment</button>
-      <button class="button" onclick="window.location.href = 'Seller.html';">Seller</button>
-      <button class="button" onclick="window.location.href = 'Courier.html';">Courier</button>
-      <button class="button" onclick="window.location.href = 'Receiver.html';">Receiver</button>
+      <button class="button" onclick="location.href = 'OrderProduct.html';">Order Product</button>
+      <button class="button" onclick="location.href = 'PaymentByBuyer.html';">Payment</button>
+      <button class="button" onclick="location.href = 'Seller.html';">Seller</button>
+      <button class="button" onclick="location.href = 'Courier.html';">Courier</button>
+      <button class="button" onclick="location.href = 'Receiver.html';">Receiver</button>
+      <button class="button" onclick="location.href = 'TrackProduct.html';">Track Product</button>
+      <button class="button" onclick="location.href = 'TrackOrder.html';">Track Order</button>
     </div>
+    <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.kaspersky.com/content/en-global/images/repository/isc/2021/safe_shopping_1.jpg" style="width:100%">
+  <img class="mySlides" src="https://cdn.corporatefinanceinstitute.com/assets/online-payment-companies-1024x683.jpeg" style="width:100%">
+  <img class="mySlides" src="https://img.freepik.com/free-photo/small-business-owner-packing-product-parcel-boxes-delivery_53876-132359.jpg?w=2000" style="width:100%">
+   <img class="mySlides" src="https://rutair.com/wp-content/themes/rutair/assets/images/courier.png" style="width:100%">
+   <img class="mySlides" src="https://blog.pgeon.delivery/content/uploads/2018/01/Deliveries-1068x712.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
   </body>
 </html>

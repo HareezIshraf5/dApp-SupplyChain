@@ -31,21 +31,34 @@ const showTrackingInfo = async (id) => {
         }
         if(result){
             console.log("succeed")
-            console.log(result.id)
-            console.log(result.location)
-            console.log(result.shopName)
-            console.log(result.buyerName)
-            console.log(result.timeArrived)
-            // Display the tracking information in the div element
-        // document.getElementById("tracking-info").innerHTML = 
-        // `
-        // ID: ${result.id}
-        // Location: ${result.location}
-        // Shop Name: ${result.shopName}
-        // Buyer Name: ${result.buyerName}
-        // Time Arrived: ${result.timeArrived}
-        // State: ${result.state}
-        // `;
+            console.log("Product ID: ", result.id)
+            console.log("Location of Receiver: ", result.location)
+            console.log("Shop Name: ", result.shopName)
+            console.log("Name of Buyer: ", result.buyerName)
+            console.log("Time Arrived: ", result.timeArrived)
+
+            // Display the Product created information in the div element
+            const id = document.getElementById("statusid");
+            id.innerHTML = "Product ID: " + result.id;
+
+            const location = document.getElementById("statuslocation");
+            location.innerHTML = "Location: " + result.location;
+            
+            const shopname = document.getElementById("statusshopname");
+            shopname.innerHTML = "Shop Name: " + result.shopName;
+
+            const buyername = document.getElementById("statusbuyername");
+            buyername.innerHTML = "Buyer Name: " + result.buyerName;
+
+            const timearrived = document.getElementById("statustimearrived");
+            timearrived.innerHTML = "Time Arrived: " + result.timeArrived;
+
+            id.className = "status white-text";
+            location.className = "status white-text";
+            shopname.className = "status white-text";
+            buyername.className = "status white-text";
+            timearrived.className = "status white-text";
+          
 
         }else{
             console.log("failed")
@@ -53,34 +66,12 @@ const showTrackingInfo = async (id) => {
     });
 }
 
-// function showTrackingInfo(id) {
-//     contract.methods.trackings(id).call().then(function(result) {
-//         // Display the tracking information in the div element
-//         document.getElementById("tracking-info").innerHTML = 
-//         `
-//         ID: ${result.id}
-//         Location: ${result.location}
-//         Shop Name: ${result.shopName}
-//         Buyer Name: ${result.buyerName}
-//         Time Arrived: ${result.timeArrived}
-//         State: ${result.state}
-//         `;
-//     });
-// }
-
 
 const printValues = (e) => {
     e.preventDefault();
     const product_id = document.getElementById("Product_ID").value;
-    // const location = document.getElementById("Location").value;
-    // const recipient_name = document.getElementById("Recipient_Name").value;
-    // const time_arrived = document.getElementById("Time_Arrived").value;
-
 
     console.log("Product ID: ", product_id);
-    // console.log("Location: ", location);
-    // console.log("Name of Receiver: ", recipient_name);
-    // console.log("Time Arrived: ", time_arrived);
  
    showTrackingInfo(product_id)
   }
