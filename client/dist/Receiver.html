@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="/Receiver.014d9fb1.css">
+    <meta charset="utf-8">
+    <title>Receiver</title>
+    <style>body {
+  background-image: url("https://media.istockphoto.com/id/1250933033/photo/bright-light-behind-the-slightly-ajar-door-abstract-background.jpg?s=170667a&w=0&k=20&c=i3Imze4XouJ_PlkYDGlu_MEnkc6_bE-LcVT4Ms6aM2I=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4493ec;
+  border: none;
+  margin: 20px;
+  padding: 20px 40px;
+  font-size: 1em;
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 100px;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  font-family: Helvetica;
+  font-size: 4em;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  color: #fff;
+  margin-right: 10px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4493ec;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 14px 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#status {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+</style>
+  </head>
+  <body>
+    <h1>Receiver</h1>
+    <form id="form5" onsubmit="printValues(event)">
+      <label>Product ID:</label>
+      <input type="Number" id="Product_ID" required=""><br>
+
+      <label>Location:</label>
+      <input type="text" id="Location" required=""><br>
+
+      <label>Recipient Name:</label>
+      <input type="text" id="Recipient_Name" required=""><br>
+
+      <label>Time Arrived:</label>
+      <input type="text" id="Time_Arrived" required=""><br>
+
+
+      <input type="submit" value="Submit">
+      <p id="status"></p>
+    </form>
+    <div class="container">
+      <button class="button" onclick="window.location.href = 'index.html';">Home</button>
+      <button class="button" onclick="window.location.href = 'OrderProduct.html';">Order Product</button>
+      <button class="button" onclick="window.location.href = 'PaymentByBuyer.html';">Payment</button>
+      <button class="button" onclick="window.location.href = 'Seller.html';">Seller</button>
+      <button class="button" onclick="window.location.href = 'Courier.html';">Courier</button>
+      <button class="button" onclick="window.location.href = 'TrackProduct.html';">Track Product</button>
+      <button class="button" onclick="window.location.href = 'TrackOrder.html';">Track Order</button>
+    </div>
+    <script src="/Receiver.49c77a70.js" defer=""></script>
+  </body>
+</html>
+
+
+

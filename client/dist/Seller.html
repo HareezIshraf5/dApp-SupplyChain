@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="/Seller.014d9fb1.css">
+    <meta charset="utf-8">
+    <title>Seller</title>
+    <style>body {
+  background-image: url("https://www.ibm.com/blogs/blockchain/wp-content/uploads/2019/12/Retina_Display-758591537.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4493ec;
+  border: none;
+  margin: 20px;
+  padding: 20px 40px;
+  font-size: 1em;
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 100px;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  font-family: Helvetica;
+  font-size: 4em;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  color: #fff;
+  margin-right: 10px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 14px 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4493ec;
+}
+
+#status {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+</style>
+  </head>
+  <body>
+    <h1>Seller</h1>
+    <form id="form3" onsubmit="printValues(event)">
+      <label>Product ID:</label>
+      <input type="Number" id="Product_ID" required=""><br>
+
+      <label>Location:</label>
+      <input type="text" id="Location" required=""><br>
+
+      <label>Shop Name:</label>
+      <input type="text" id="Shop_Name" required=""><br>
+
+      <label>Buyer Name:</label>
+      <input type="text" id="Buyer_Name" required=""><br>
+
+      
+
+      <input type="submit" value="Submit">
+      <p id="status"></p>
+    </form>
+    <div class="container">
+      <button class="button" onclick="window.location.href = 'index.html';">Home</button>
+        <button class="button" onclick="window.location.href = 'OrderProduct.html';">Order Product</button>
+        <button class="button" onclick="window.location.href = 'PaymentByBuyer.html';">Payment</button>
+        <button class="button" onclick="window.location.href = 'Courier.html';">Courier</button>
+        <button class="button" onclick="window.location.href = 'Receiver.html';">Receiver</button>
+        <button class="button" onclick="window.location.href = 'TrackProduct.html';">Track Product</button>
+        <button class="button" onclick="window.location.href = 'TrackOrder.html';">Track Order</button>
+      </div>
+    <script src="/Seller.449f28c2.js" defer=""></script>
+  </body>
+</html>
+
+
+

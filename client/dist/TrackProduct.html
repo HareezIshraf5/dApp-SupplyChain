@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="/TrackProduct.014d9fb1.css">
+    <meta charset="utf-8">
+    <title>See Product Created</title>
+    <style>body {
+  background-image: url("https://img.freepik.com/premium-vector/city-map-traffic-satellite-tracking-background_8071-10861.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4493ec;
+  border: none;
+  margin: 20px;
+  padding: 20px 40px;
+  font-size: 1em;
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 200px 100px;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  font-family: Helvetica;
+  font-size: 4em;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  color: #fff;
+  margin-right: 10px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 14px 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.status {
+  color: #fff;
+}
+
+</style>
+  </head>
+  <body>
+    <h1>Track Product Created</h1>
+    <form id="form7" onsubmit="printValues(event)">
+      <label>Order ID:</label>
+      <input type="number" id="Product_ID" required=""><br>
+
+      <input type="submit" value="Track">
+      <p id="statusid"></p>
+      <p id="statusname"></p>
+      <p id="statuscapacity"></p>
+      <p id="statuscolor"></p>
+      <p id="statusquantity"></p>
+      <p id="statusprice"></p>
+    </form>
+    <div class="container">
+      <button class="button" onclick="window.location.href = 'index.html';">Home</button>
+      <button class="button" onclick="window.location.href = 'OrderProduct.html';">Order Product</button>
+      <button class="button" onclick="window.location.href = 'PaymentByBuyer.html';">Payment</button>
+      <button class="button" onclick="window.location.href = 'Seller.html';">Seller</button>
+      <button class="button" onclick="window.location.href = 'Courier.html';">Courier</button>
+      <button class="button" onclick="window.location.href = 'Receiver.html';">Receiver</button>
+      <button class="button" onclick="window.location.href = 'TrackOrder.html';">Track Order</button>
+    </div>
+    <script src="/TrackProduct.88093d9b.js" defer=""></script>
+  </body>
+</html>
